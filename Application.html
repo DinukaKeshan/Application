@@ -1,84 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        #h1{
-            color: red;
+        * {
+            box-sizing: border-box;
         }
-        table, th, td{
+
+        table,
+        th,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 2px;
+
         }
 
-        td{
-            width: 200px;
+        table {
+            margin: 10px;
+            width: 97%;
         }
 
-        #image1{
+        .title {
+            color: red;
+        }
+
+        /* .center {
+            text-align: center;
+            color: blue;
+            font-weight: bold;
+        } */
+
+
+
+        .comp-1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
             position: relative;
-            clear: both;
         }
+        .comp1-L{
+            flex: 5;
+        }
+        
+        .comp1-R{
+            flex: 5;
 
+        }
+        .img1{
+            position: absolute;
+            right: 4px;
+            bottom: 50px;
+        }
+        td:nth-child(even){
+            color: blue;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
+
     <img src="Resources/logo.png" alt="logo" width="600px">
 
-    <!--<div>
-        <p>
-            No. 178, Colombo Road, Kurunegala, Sri Lanka.<br>
-            0377294270 / 0372229788 / 0761680055<br>
-            niluagencies@gmail.com<br>
-            L.L.No : 2187
-        </p>
-    </div>-->
-    
-    <div id="image1">
-        <img src="Resources/img1.jpg" alt="profile" width="200px">
-    </div>
+
 
     <div id="h1">
-        <h3>APPLICATION FOR EMPLOYMENT</h3>
-    </div>
-    <div>
-        <table>
-            <tr>
-                <td>COUNTRY</td>
-                <td>Kuwaite</td>
-                <td>Language</td>
-            </tr>
-            <tr>
-                <td>POST APPLIED FOR</td>
-                <td>House Maid</td>
-                <td>Language</td>
-            </tr>
-            <tr>
-                <td>MONTHLY SALARY</td>
-                <td>120KD</td>
-                <td>Language</td>
-            </tr>
-            <tr>
-                <td>CONTACT PERIOD</td>
-                <td>2 Years</td>
-                <td>Language</td>
-            </tr>
-        </table>
+        <h3 class="title">APPLICATION FOR EMPLOYMENT</h3>
     </div>
 
-    <div>
-        <table>
-            <tr>
-                <td>REF. NO</td>
-                <td>00NA118</td>
-            </tr>
-        </table>
+
+    <div class="comp-1">
+        <div class="comp1-L">
+            <table class="t1">
+                <tr>
+                    <td>COUNTRY</td>
+                    <td class="center">Kuwaite</td>
+                    <td>Language</td>
+                </tr>
+                <tr>
+                    <td>POST APPLIED FOR</td>
+                    <td class="center">House Maid</td>
+                    <td>Language</td>
+                </tr>
+                <tr>
+                    <td>MONTHLY SALARY</td>
+                    <td class="center">120KD</td>
+                    <td>Language</td>
+                </tr>
+                <tr>
+                    <td>CONTACT PERIOD</td>
+                    <td class="center">2 Years</td>
+                    <td>Language</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="comp1-R">
+            <div class="comp-1-T">
+                <img src="Resources/img1.jpg" alt="profile" width="200px" class="img1">
+            </div>
+
+            <table class="t2 comp-1-B">
+                <tr>
+                    <td>REF. NO</td>
+                    <td class="center">00NA118</td>
+                </tr>
+            </table>
+        </div>
     </div>
+
 
     <div>
         <table>
@@ -218,4 +255,5 @@
 
     <h5>WORKING EXPERIENCE</h5>
 </body>
+
 </html>
